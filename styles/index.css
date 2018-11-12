@@ -1,0 +1,27 @@
+.body-block {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.label-holder {
+    margin-top: 1em;
+    width: 30%;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.input-holder {
+    margin-top: 1em;
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.button-holder {
+    width: 90%;
+    margin-top: 1em;
+}
