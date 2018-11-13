@@ -1,8 +1,22 @@
+body {
+    background: #efeffa;
+    color: #044389;
+}
+
+.red {
+    color: red;
+}
+
 .body-block {
     width: 90%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 5%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background: #adcad6;
 }
 
 .label-holder {
@@ -11,6 +25,10 @@
     text-align: right;
     display: inline-block;
     vertical-align: top;
+}
+
+.store-activity {
+    margin-top: 0;
 }
 
 .input-holder {
@@ -24,4 +42,54 @@
 .button-holder {
     width: 90%;
     margin-top: 1em;
+}
+
+.custom-input {
+    background: transparent;
+    width: 15em;
+    border: 2px solid #044389;
+    border-radius: .5em;
+}
+
+.custom-select {
+    width: 15em;
+    border: 2px solid #044389;
+    background: transparent;
+}
+
+.custom-check {
+    visibility: hidden;/* <-- hide the default checkbox, the rest is to hide and alllow tabbing, which display:none prevents */
+    display:block;
+    height:0;
+    width:0;
+    position:absolute;
+    overflow:hidden;
+}
+
+.new-check {/* <-- style the artificial checkbox */
+    height: .5em;
+    width: .5em;
+    border: 2px solid #044389;
+    display: inline-block;
+    border-radius: .5em;
+}
+
+.custom-check:checked + .new-check {/* <-- style its checked state */
+    background: #044389;
+}
+
+.custom-button {
+    border: 2px solid #044389;
+    background: #044389;
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: .5em;
+    width: 10em;
+    height: 3.5em;
+}
+
+::placeholder {
+    color: #444;
+    font-weight: 600;
 }

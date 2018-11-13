@@ -13,35 +13,35 @@
     <p id="description">We would like to improve our service in whatever ways possible. Please let us know what we did correctly, and what we could improve.</p> 
     
     <form id="survey-form">
-        <div class="label-holder"><label for="name" id="name-label"> Name </label></div>
-        <div class="input-holder"><input type="text" name="name" id="name" placeholder="John" required><br /></div>
-        <div class="label-holder"><label for="email" id="email-label"> Email Address</label></div>
-        <div class="input-holder"><input type="email" name="email" id="email" placeholder="john@example.com" required><br /></div>
-        <div class="label-holder"><label for="number" id="number-label">Store Number</label></div>
-        <div class="input-holder"><input type="number" name="number" id="number" min='1' max='10' placeholder="5" required><br /></div>
-        <div class="label-holder"><label for="dropdown">Which portion of the location did you visit?</label></div>
+        <div class="label-holder"><label for="name" id="name-label"> Name <span class="red">*</span> </label></div>
+        <div class="input-holder"><input type="text" name="name" id="name" class="custom-input" placeholder="John" required><br /></div>
+        <div class="label-holder"><label for="email" id="email-label"> Email Address <span class="red">*</span></label></div>
+        <div class="input-holder"><input type="email" name="email" id="email" class="custom-input" placeholder="john@example.com" required><br /></div>
+        <div class="label-holder"><label for="number" id="number-label">Store Number <span class="red">*</span></label></div>
+        <div class="input-holder"><input type="number" name="number" id="number" class="custom-input" min='1' max='10' placeholder="5" required><br /></div>
+        <div class="label-holder"><label for="dropdown">Which portion of the location did you visit? <span class="red">*</span></label></div>
         <div class="input-holder">
-        <select name="dropdown" id="dropdown">
+        <select name="dropdown" id="dropdown" class="custom-select">
             <option value="store">Store</option>
             <option value="restaurant">Restaurant</option>
             <option value="both">Both</option>
         </select><br /></div>
-        <div class="label-holder"><label for="store-activity"><br />What did you do in our store?</label></div>
+        <div class="label-holder store-activity"><label for="store-activity"><br />What did you do in our store?</label></div>
         <div class="input-holder">
-        <input type="radio" name="store-activity" id="made-purchase" value="made-purchase"> Made a purchase <br />
-        <input type="radio" name="store-activity" id="browsed-store" value="browsed-store"> Browsed the store <br />
-        <input type="radio" name="store-activity" id="not-in-store" value="not-in-store"> Did not enter the store <br />
+            <label for="made-purchase"><input type="radio" name="store-activity" id="made-purchase" value="made-purchase" class="custom-check"> <span class="new-check"></span> Made a purchase</label>  <br />
+            <label for="browsed-store"><input type="radio" name="store-activity" id="browsed-store" value="browsed-store" class="custom-check"> <span class="new-check"></span> Browsed the store</label>  <br />
+            <label for="not-in-store"><input type="radio" name="store-activity" id="not-in-store" value="not-in-store" class="custom-check"> <span class="new-check"></span> Did not enter the store</label>  <br />
         </div>
         <div class="label-holder"><label for="food-purchased">Which food items did you purchase?</label></div>
         <div class="input-holder">
-            <input type="checkbox" name="food-purchased" id="sandwich" value="sandwich"> Sandwich <br />
-            <input type="checkbox" name="food-purchased" id="chips" value="chips"> Chips <br />
-            <input type="checkbox" name="food-purchased" id="coffee" value="coffee"> Coffee <br />
-            <input type="checkbox" name="food-purchased" id="soda" value="soda"> Soda <br />
+            <label for="sandwich"> <input type="checkbox" name="food-purchased" id="sandwich" value="sandwich" class="custom-check"> <span class="new-check"></span> Sandwich </label><br />
+            <label for="chips"><input type="checkbox" name="food-purchased" id="chips" value="chips" class="custom-check"><span class="new-check"></span> Chips</label>  <br />
+            <label for="coffee"><input type="checkbox" name="food-purchased" id="coffee" value="coffee" class="custom-check"> <span class="new-check"></span> Coffee </label> <br />
+            <label for="soda"><input type="checkbox" name="food-purchased" id="soda" value="soda" class="custom-check"> <span class="new-check"></span> Soda </label> <br />
         </div>
         <div class="label-holder"><label for="comments">Enter any aditional comments you have:</label> <br /></div> 
-        <div class="input-holder"><textarea name="comments" id="comments" cols="30" rows="10"></textarea> <br /></div>
-        <div class="button-holder"><button type="submit" id="submit">Submit</button></div> 
+        <div class="input-holder"><textarea name="comments" id="comments" class="custom-input" cols="30" rows="10"></textarea> <br /></div>
+        <div class="button-holder"><button type="submit" id="submit" class="custom-button">Submit</button></div> 
     </form>
 </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
